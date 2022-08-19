@@ -2,7 +2,8 @@
 
  My Personalized Resume
 
-This personalized resume contains my career progression. I have been able to master HTML and CSS to a considerable level of proficiency.
-I have also been able to deploy necessary Media Query as I attempt to achieve a responsive web design.
+This personalized resume contains my career progression in web development using HTML, CSS and Javascript. I have been able to master HTML and CSS to a considerable level of proficiency. However, as the time of publishing this website (August 18, 2022), I am still trying to figure out how to navigate Javascript.
 
-Kindly comment, and review my codes and so I can make necessary corrections.
+However, the success I have achieved so far, is from how I was able to employ Bootstrap and Media Query to achieve a responsive web design.
+
+I am using this README.md to document my daily challenges and successes as I progress in this new found path.
