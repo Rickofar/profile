@@ -1,10 +1,29 @@
-* {
-  box-sizing: border-box;
-}
 body {
   font-family: tahoma;
   background-color: #182a39;
   color: aliceblue;
+  font-family: "lato", sans-serif;
+/*  animation: body 5s ease-in-out 0s infinite normal;*/
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+}
+
+li {
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h2 {
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 /** Header **/
@@ -18,7 +37,7 @@ body {
   font-size: 1.5em;
   text-shadow: 1px 1px 1px whitesmoke;
   font-weight: bold;
-  margin-top: 0px;
+  margin-top: 20px;
   margin-bottom: 0;
   line-height: .65;
 }
@@ -28,16 +47,26 @@ body {
 }
 
 #nav-list {
-  margin-top: 0px;
+  margin-top: -40px;
 }
+
 #nav-list a {
   color: black;
   text-align: center;
-   text-shadow: 1px 1px 1px whitesmoke;
+  text-shadow: 1px 1px 1px whitesmoke;
+  -webkit-transition: 1.2s ease-in-out color;
+  -moz-transition: 1.2s ease-in-out color;
+  -o-transition: 1.2s ease-in-out color;  
 }
 #nav-list a:hover {
-  background: white;
+  /*background-color: #182a39;*/
+  color: darkblue;
+  padding: 20px;
+  /*text-shadow: none;*/
+  font-weight: bold;
+  font-size: 1em;
 }
+
 #nav-list a span {
   font-size: 1.2em;
 } 
@@ -49,7 +78,7 @@ body {
   text-align: right;
   padding-bottom: 0;
 }
-#phone div { /* ...essence of beauty */
+#phone div { /* ...my online profie */
   color: red;
   text-align: right;
   padding-right: 25px;
@@ -104,46 +133,133 @@ body {
   margin-top: 10px;
 }
 
-#p1 h4,#p2 h4{
+#p1 h5,#p2 h5{
   color: black;
   font-weight: bold;
-  margin-top: -2px;
   text-align: center;
 }
 
 #p1, #p2{
+  display: grid;
+  width: 48%;
   color: black;
-  width: 49%;
   height: 200px;
   float: left;
-  padding: 10px;
+  padding: 2px 5px;
   overflow: hidden;
   text-align: justify;
   background-color: lightblue;
   margin-inline: 4px;
-  margin-top: 10px;
 }
 
 #features h4{
+  font-weight: bold;
+  display: grid;
   text-align: center;
-  margin-top: 240px;
+  margin-top: 10px;
 }
 
 #p3{
   color: black;
-  width: 100%;
+  width: 97%;
   height: auto;
   padding: 10px;
   background-color: lightblue;
 }
 
-#p3 h4{
+#p3 h5{
   text-align: center;
+  font-weight: bold;
+}
+
+#p1:hover, #p2:hover{
+  background-color: steelblue;
+  color: floralwhite;
+  height: 250px;
+  width: 49%;
+  padding: 4px 10px;
+}
+
+#p3:hover{
+  background-color: steelblue;
+  color: floralwhite;
+  height: 200px;
+  width: 100%;
+  padding: 10px;
+}
+
+#learn-more a{
+  color: darkblue;
+  /*text-decoration: underline;*/
+  -webkit-transition: 0.5s ease-in-out color;
+  -moz-transition: 0.5s ease-in-out color;
+  -o-transition: 0.5s ease-in-out color;
+}
+
+#learn-more a:hover{
+  color: white;
+}
+
+#p3 a{
+  color: darkblue;
+  /*text-decoration: underline;*/
+  -webkit-transition: 0.5s ease-in-out color;
+  -moz-transition: 0.5s ease-in-out color;
+  -o-transition: 0.5s ease-in-out color;
+}
+
+#p3 a:hover{
+  color: white;
 }
 
 /** End of First Page **/
 
-/** My Resume Page **/
+/** Resume Page **/
+
+#up{
+  margin-left: 900px;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: white;
+}
+
+#side-up {
+    margin-left: 300px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+}
+
+.resume-container{
+  display: grid;
+  grid-template-columns: 68% 30%;
+  grid-gap: 30px;
+  margin-left: 20px;
+}
+
+.resume-container h3{
+  font-weight: bold;
+  text-align: center;
+}
+
+.resume-container h4{
+  font-weight: bold;
+}
+
+.sidebar {
+  background: steelblue;
+  padding-left: 10px;
+  /*padding-right: 100px;*/
+}
+
+.sidebar a{
+  color: black;
+}
+.sidebar h5{
+  font-weight: bold;
+}
 
 #my-profile-nav ul {
   margin-top: 15px;
@@ -154,12 +270,12 @@ body {
 }
 
 #li-1, #li-2, #li-3, #li-4 {
-  background-color: lightblue;
+  /*background-color: lightblue;*/
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 10px;
   font-weight: bold;
-  margin-inline: 90px;
+  margin-inline: 80px;
 }
 
 #my-profile-nav li {
@@ -169,70 +285,117 @@ body {
 
 #my-profile-nav li a{
   text-decoration: none;
-  color: black;
+  color: whitesmoke;
 }
 
-#my-profile-nav li a:hover{
-  background: whitesmoke;
+}
+/** End of Resume Page **/
+
+/** Project Page **/
+
+.posts-container{
+  display: grid;
+  grid-template-columns: 68% 30%;
+  grid-gap: 30px;
+  margin-left: 20px;
 }
 
-#resume-div h3{
+.posts-container h4{
   font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  text-align: center;
 }
 
-#about p{
-  text-align: justify;
+.posts-container h5{
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-#about {
-  width: 900px;
-  position: relative;
-  float: left;
-  padding-inline: 20px;
-  margin-top: -20px;
+.personal-projects video{
+  width: 460px;
+  padding: 5px;
+  -webkit-transition: 0.5s ease-in-out  all;
+  -moz-transition: 0.5s ease-in-out  all;
+  -o-transition: 0.5s ease-in-out  all;
 }
 
-#schools {
+.personal-projects video:hover{
+  padding: 20px;
+}
+
+.featured-projects video{
+  width: 460px;
+  padding: 5px;
+-webkit-transition: 0.5s ease-in-out  all;
+  -moz-transition: 0.5s ease-in-out  all;
+  -o-transition: 0.5s ease-in-out  all;
+}
+
+.featured-projects video:hover{
+  padding: 20px;
+}
+
+.video-title{
   width: 400px;
-  position: relative;
-  float: left;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  padding-inline: 20px;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 10px;
 }
 
-#school-list {
-  margin-left: 420px;
+/*.video-title span{
+  text-align: center;
+  clear: right;
+}*/
+
+/** End of Project page **/
+
+/** Post Page **/
+
+.posts-container{
+  display: grid;
+  grid-template-columns: 68% 30%;
+  grid-gap: 30px;
+  margin-left: 30px;
 }
 
-#experience{
-  width: 740px;
-  position: relative;
-  float: left;
-  clear: left;
-  padding-inline: 20px;
-  margin-top: 20px;
-}
-
-#handwork {
-  width: 300px;
-  position: relative;
-  float: left;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  padding-inline: 20px;
-}
-
-#skill-list {
-  margin-left: 280px;
-}
-
-h4{
+.posts-container h4{
   font-weight: bold;
+  text-align: center;
 }
 
+.posts-container h5{
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.personal-posts video{
+  width: 460px;
+  /*padding: 5px;*/
+  /*border: 1px solid white;*/
+  /*background-color: lightblue;*/
+  -webkit-transition: 0.5s ease-in-out  all;
+  -moz-transition: 0.5s ease-in-out  all;
+  -o-transition: 0.5s ease-in-out  all;
+}
+
+.personal-posts video:hover{
+  padding: 20px;
+}
+
+.featured-posts video{
+  width: 460px;
+  padding: 5px;
+-webkit-transition: 0.5s ease-in-out  all;
+  -moz-transition: 0.5s ease-in-out  all;
+  -o-transition: 0.5s ease-in-out  all;
+}
+
+.featured-posts video:hover{
+  padding: 20px;
+}
+
+/** End of post page **/
 
 /* FOOTER */
 .panel-footer {
@@ -269,375 +432,59 @@ h4{
 .panel-footer .text-center {
   font-size: 12px;
 }
+
+.panel-footer img{
+  margin-top: 10px;
+  width: 25px;
+  -webkit-transition: 1.2s ease-in-out  all;
+  -moz-transition: 1.2s ease-in-out  all;
+  -o-transition: 1.2s ease-in-out  all;
+}
+
+.panel-footer img:hover{
+  width: 50px;
+  padding-inline: 5px;
+}
+
 /* END FOOTER */
 
-/** Media Query **/
 
-/********** Large devices only **********/
+
+/*@keyframes body{
+  from{background: steelblue;}
+  to{background: #182a39;}
+}*/
+
+/********** large devices Only :-) **********/
 @media (min-width: 1200px) {
-  .navbar-brand h1 {
-  color: black;
-  font-size: 1.5em;
-  text-shadow: 1px 1px 1px whitesmoke;
-  font-weight: bold;
-  margin-top: 25px;
-  margin-bottom: 0;
-  line-height: .65;
+
 }
 
-#nav-list a {
-  color: black;
-  text-align: center;
-  text-shadow: 1px 1px 1px whitesmoke;
-  font-size: 14px;
-}
-
-  #nav-list {
-  margin-top: -40px;
-}
-  
- .navbar-toggle {
-  position: relative;
-  float: right;
-  padding: 9px 10px;
-  margin-top: 5px;
-  margin-right: 15px;
- }
-#about-img{
-  margin-top: 20px;
-}
-}
-
-/********** Medium devices only **********/
+/********** medium devices Only :-) **********/
 @media (min-width: 992px) and (max-width: 1199px) {
-.navbar-brand h1 {
-  color: black;
-  font-size: 1.5em;
-  text-shadow: 1px 1px 1px whitesmoke;
-  font-weight: bold;
-  margin-top: 25px;
-  margin-bottom: 0;
-  line-height: .65;
-}
-
-#nav-list a {
-  color: black;
-  text-align: center;
-  text-shadow: 1px 1px 1px whitesmoke;
-  font-size: 14px;
-  margin-top: -40px;
-}
-  
- .navbar-toggle {
-  position: relative;
-  float: right;
-  padding: 9px 10px;
-  margin-top: 5px;
-  margin-right: 15px;
-}
-
-/** My Profile **/
-#li-1, #li-2, #li-3, #li-4 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 7px;
-  font-weight: bold;
-  margin-inline: 70px;
-  } 
-#resume-div h3{
-  font-size: 1.8em;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#about {
-  width: 70%;
-  position: relative;
-  float: left;
-  padding-inline: 10px;
-  margin-top: -10px;
-}
-
-#schools {
-  width: 200px;
-  position: relative;
-  float: left;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  padding-inline: 20px;
-}
-
-#school-list {
-  margin-left: 200px;
-}
-#work-img {
-  height: 20%;
-  width: 20%;
-  position: relative;
-  margin-left: 10px;
-  margin-top: 30px;
-}
-
-#about-img{
-  height: 20%;
-  width: 20%;
-  position: relative;
-  margin-left: 10px;
-  margin-top: 20px;
-}
-
-#school-img {
-  height: 40%;
-  width: 60%;
-  position: relative;
-  margin-left: 10px;
-}
-
-#experience {
-  width: 70%;
-  position: relative;
-  float: left;
-  clear: left;
-  padding-inline: 0px;
-  margin-top: 10px;
-}
-
-#handwork-img {
-  height: 32%;
-  width: 35%;
-}
-
-#handwork {
-  width: 100px;
-  position: relative;
-  float: left;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  padding-inline: 0px;
-}
-
-#skill-list {
-  margin-left: 95px;
-  margin-top: -40px;
-  margin-bottom: 25px;
-}
-/** end of Profile page **/
-
-/** First Page **/
-#p1, #p2{
-  width: 49%;
-  height: 250px;
-  float: left;
-  padding: 10px;
-  overflow: hidden;
-  text-align: justify;
-  background-color: lightblue;
-  margin-inline: 4px;
-}
-
-#features h4{
-  text-align: center;
-  margin-top: 280px;
-}
-
-#p3{
-  color: black;
-  width: 99%;
-  height: auto;
-  padding: 5px;
-  background-color: lightblue;
-}
-
-#p3 h4{
-  margin-top: 0px;
-}
-
-#p3 p{
-  margin-top: -5px;
-}
-
-/** End of first page **/
-
-h5{
-  font-size: 1em;
-  text-decoration: none;
-}
-h4{
-  font-size: 1em;
-}
-/** end of profile page **/ 
-}
-
-/********** Small devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
-  /* Header */
-.navbar-brand h1 {
-  color: black;
-  font-size: 1.5em;
-  text-shadow: 1px 1px 1px whitesmoke;
-  font-weight: bold;
-  margin-top: 25px;
-  margin-bottom: 0;
-  line-height: .65;
-}
-
-#nav-list a {
-  color: black;
-  text-align: center;
-  text-shadow: 1px 1px 1px whitesmoke;
-  font-size: 14px;
-  margin-top: -40px;
-}
-  
- .navbar-toggle {
-  position: relative;
-  float: right;
-  padding: 9px 10px;
-  margin-top: 5px;
-  margin-right: 15px;
-}
-
-/** first page **/
-
-#main-content h4 {
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 10px;
-  margin-top: 0px;
-}
-
-#p1, #p2{
-  font-size: 0.9em;
-  width: 48%;
-  height: 250px;
-  float: left;
-  margin-top: 7px;
-  padding: 10px;
-  text-align: justify;
-}
-
-#features h4{
-  text-align: center;
-  margin-top: 280px;
-}
-
-#p3{
-  color: black;
-  width: 98%;
-  height: auto;
-  padding: 5px;
-  background-color: lightblue;
-}
-
-#p3 h4{
-  margin-top: 0px;
-}
-
-#p3 p{
-  margin-top: -5px;
-}
-
-/** end of first page **/
-
-/** My Profile **/
-#li-1, #li-2, #li-3, #li-4 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 7px;
-  font-weight: bold;
-  margin-inline: 40px;
-  }
-
-#resume-div h3{
-  font-size: 1.7em;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#about {
-  width: 100%;
-  position: relative;
-  float: left;
-  padding-inline: 0px;
-  margin-top: -10px;
-}
-
-#schools {
-  width: 100%;
-  position: relative;
-  float: left;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  padding-inline: 0px;
-}
-
-#school-img,#about-img,#work-img{
-  height: 80%;
-  width: 80%;
-  position: relative;
-  margin-left: 60px;
-}
-
-#school-list {
-  width: 100%;
-  margin-left: -25px;
-}
-
-#experience{
-  width: 100%;
-  position: relative;
-  float: left;
-  clear: left;
-  padding-inline: 0px;
-  margin-top: 10px;
-}
-
-#handwork-img {
-  height: 30%;
-  width: 33%;
-}
-
-#handwork {
-  width: 190px;
-  position: relative;
-  float: left;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  padding-inline: 0px;
-}
-
-#skill-list {
-  margin-left: 10px;
-  margin-top: -40px;
-  margin-bottom: 25px;
-}
-/** end of profile page **/
-
-h5{
-  font-size: 1em;
-  text-decoration: none;
-}
-h4{
-  font-size: 1em;
-}
-/** end of profile page **/ 
-}
-
-/********** extra small devices Only :-) **********/
-@media (max-width: 767px) {
   body{
-    font-size: 1em;
+    font-size: 1.3em;
   }
 
   /* Header */
 .navbar-brand h1 {
   color: black;
-  font-size: 1em;
+  font-size: 1.2em;
   text-shadow: 1px 1px 1px whitesmoke;
   font-weight: bold;
-  margin-top: 5px;
+  margin-top: 20px;
   margin-bottom: 0;
   line-height: .65;
+}
+
+#nav-list {
+  margin-top: -25px;
+}
+
+.navbar-nav li a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  line-height: 10px;
 }
 
 #nav-list a span {
@@ -651,145 +498,832 @@ h4{
   text-shadow: 1px 1px 1px whitesmoke;
   font-size: 12px;
   }
-  
+
  .navbar-toggle {
   position: relative;
   float: right;
   padding: 9px 10px;
   margin-top: 5px;
   margin-right: 15px;
-  }
+}
 
-/** first page **/
-#main-content h4 {
+/** First page **/
+
+#main-content h4, #features h4 {
+  margin-bottom: 7px;
+  margin-top: 15px;
+  font-size: 1em;
+}
+
+#tab-info-1 span{
   font-weight: bold;
-  text-align: center;
-  margin-bottom: 10px;
+  padding: 10px;
   margin-top: 10px;
+}
+
+#p1 h5,#p2 h5, #p3 h5{
+  font-size: 1em;
+  margin-top: 5px;
 }
 
 #p1, #p2{
-  font-size: 1em;
+  display: grid;
   width: 100%;
-  height: 150px;
-  float: left;
-  margin-top: 7px;
-  padding: 10px;
-  text-align: justify;
-}
-
-#features h4{
-  text-align: center;
-  margin-top: 335px;
-}
-
-#p3{
-  color: black;
-  width: 100%;
-  height: auto;
+  height: 140px;
   padding: 5px;
-  background-color: lightblue;
+  margin-top: 10px;
 }
 
-#p3 h4{
+#p3 {
+  display: grid;
+  width: 100%;
+  height: 140px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+#p1 p, #p2 p, #p3 p{
+  margin-top: -15px;
+}
+
+#p1:hover, #p2:hover{
+  background-color: steelblue;
+  color: floralwhite;
+  height: 160px;
+  width: 100%;
+  padding: 4px 10px;
+}
+
+#p3:hover{
+  background-color: steelblue;
+  color: floralwhite;
+  height: 160px;
+  width: 100%;
+  padding: 10px;
+}
+
+
+/** End of First Page **/
+
+/** Resume Page **/
+#my-profile-nav ul {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  left: -45px;
+  position: relative;
+  right: auto;
+}
+
+#li-1, #li-2, #li-3, #li-4 {
+  /*background-color: lightblue;
+ /*/* margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 1px;
+  font-weight: bold;
+  margin-inline: 15px;
+}
+
+#my-profile-nav li {
+  display: inline;
+  position: relative;
+}
+
+#my-profile-nav li a{
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1em;
+}
+
+.resume-container{
+  display: grid;
+  grid-template-columns: 65% 30%;
+  grid-gap: 15px;
+  margin-left: 15px;
+}
+
+.resume-container h3{
+  font-size: 1.5em;
   margin-top: 0px;
 }
 
-#p3 p{
+.main-para h4{
+  font-size: 1em;
+}
+
+.main-para p{
   margin-top: -5px;
+  font-size: 0.9em;
 }
 
-/** end of first page **/
-
-/** My Profile **/
-#my-profile-nav ul {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  left: -15px;
-  position: relative;
-  right: 15px;
-  }
-
-#li-1, #li-2, #li-3, #li-4 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 7px;
-  font-weight: bold;
-  margin-inline: 20px;
-  }  
-
-#resume-div h3{
-  font-size: 1.5em;
-  margin-top: 10px;
-  margin-bottom: 10px;
+.schools{
+  margin-bottom: -10px;
 }
 
-#about {
-  width: 100%;
-  position: relative;
-  float: left;
-  padding-inline: 0px;
+.schools h4{
+  font-size: 1em;
   margin-top: -10px;
 }
 
-#schools {
-  width: 100%;
-  position: relative;
-  float: left;
-  margin-top: 20px;
+.schools ul{
+  font-size: 0.9em;
+  padding-left: 20px; 
+}
+
+.experience{
+  margin-bottom: -10px;
+}
+
+.experience h4{
+  font-size: 1em;
+  margin-top: -10px;
+}
+
+.experience ul{
+  font-size: 0.9em;
+  padding-left: 20px; 
+}
+
+.sidebar {
+  background: steelblue;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.sidebar ul {
+  padding-left: 10px;
+}
+
+.sidebar li {
+  font-size: 0.7em;
+}
+
+.sidebar a{
+  font-size: 0.7em;
+}
+.sidebar h5{
+  font-size: 0.8em;
+}
+
+.sidebar img{
+  display: none;
+}
+
+#up{
+  margin-left: 0px;
+  padding: 3px;
+  margin-top: 0px;
+}
+
+#side-up {
+  margin-left: 0px;
+  padding: 3px;
+}
+/** End of Resume Page **/
+
+/** Project Page **/
+
+.posts-container{
+  display: grid;
+  grid-template-columns: 65% 30%;
+  grid-gap: 15px;
+  margin-left: 15px;
+}
+
+.posts-container h4{
+  font-size: 1.2em;
+}
+
+.posts-container h5{
+  font-size: 1em;
+  margin-top: 10px;
   margin-bottom: 10px;
-  padding-inline: 0px;
 }
 
-#school-img,#about-img,#work-img{
-  height: 60%;
-  width: 60%;
+.personal-projects video{
+  width: 300px;
+  -webkit-transition: 0.5s ease-in-out color;
+  -moz-transition: 0.5s ease-in-out color;
+  -o-transition: 0.5s ease-in-out color;
+}
+
+.personal-projects video:hover{
+  padding: 20px;
+}
+
+.featured-projects video{
+  width: 300px;
+  padding: 5px;
+-webkit-transition: 0.5s ease-in-out color;
+  -moz-transition: 0.5s ease-in-out color;
+  -o-transition: 0.5s ease-in-out color;
+}
+
+.featured-projects video:hover{
+  padding: 20px;
+}
+
+/** End of Project page **/
+
+/** Post Page **/
+
+.posts-container{
+  display: grid;
+  grid-template-columns: 65% 30%;
+  grid-gap: 10px;
+  margin-left: 10px;
+}
+
+.posts-container h4{
+  font-size: 1em;
+}
+
+.posts-container h5{
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/** End of post page **/    
+}
+
+/********** small devices Only :-) **********/
+@media (min-width: 768px) and (max-width: 991px) {
+body{
+    font-size: 1.3em;
+  }
+
+  /* Header */
+.navbar-brand h1 {
+  color: black;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 1px whitesmoke;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 0;
+  line-height: .65;
+}
+
+#nav-list {
+  margin-top: -25px;
+}
+
+.navbar-nav li a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  line-height: 10px;
+}
+
+#nav-list a span {
+  font-size: 1.2em;
+  padding-right: 5px;
+  }
+
+#nav-list a {
+  color: black;
+  text-align: center;
+  text-shadow: 1px 1px 1px whitesmoke;
+  font-size: 12px;
+  }
+
+ .navbar-toggle {
   position: relative;
-  margin-left: 60px;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 5px;
+  margin-right: 15px;
 }
 
-#school-list {
-  width: 100%;
-  margin-left: -25px;
+/** First page **/
+
+#main-content h4, #features h4 {
+  margin-bottom: 7px;
+  margin-top: 15px;
+  font-size: 1em;
 }
 
-#experience{
-  width: 100%;
-  position: relative;
-  float: left;
-  clear: left;
-  padding-inline: 0px;
+#tab-info-1 span{
+  font-weight: bold;
+  padding: 10px;
   margin-top: 10px;
 }
 
-#handwork {
+#p1 h5,#p2 h5, #p3 h5{
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+#p1, #p2{
+  display: grid;
   width: 100%;
-  position: relative;
-  float: left;
-  margin-top: 20px;
+  height: 140px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+#p3 {
+  display: grid;
+  width: 100%;
+  height: 140px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+#p1 p, #p2 p, #p3 p{
+  margin-top: -15px;
+}
+
+#p1:hover, #p2:hover{
+  background-color: steelblue;
+  color: floralwhite;
+  height: 160px;
+  width: 100%;
+  padding: 4px 10px;
+}
+
+#p3:hover{
+  background-color: steelblue;
+  color: floralwhite;
+  height: 160px;
+  width: 100%;
+  padding: 10px;
+}
+
+
+/** End of First Page **/
+
+/** Resume Page **/
+#my-profile-nav ul {
+  margin-top: 15px;
   margin-bottom: 10px;
-  padding-inline: 0px;
+  left: -45px;
+  position: relative;
+  right: auto;
 }
 
-#skill-list {
-  margin-left: 0px;
-  margin-top: -40px;
-  margin-bottom: 15px;
+#li-1, #li-2, #li-3, #li-4 {
+  /*background-color: lightblue;
+ /*/* margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 1px;
+  font-weight: bold;
+  margin-inline: 15px;
 }
 
-h5{
-  font-size: 1.1em;
+#my-profile-nav li {
+  display: inline;
+  position: relative;
+}
+
+#my-profile-nav li a{
   text-decoration: none;
+  color: whitesmoke;
+  font-size: 1em;
 }
-h4{
+
+.resume-container{
+  display: grid;
+  grid-template-columns: 65% 30%;
+  grid-gap: 15px;
+  margin-left: 15px;
+}
+
+.resume-container h3{
+  font-size: 1.5em;
+  margin-top: 0px;
+}
+
+.main-para h4{
+  font-size: 1em;
+}
+
+.main-para p{
+  margin-top: -5px;
+  font-size: 0.9em;
+}
+
+.schools{
+  margin-bottom: -10px;
+}
+
+.schools h4{
+  font-size: 1em;
+  margin-top: -10px;
+}
+
+.schools ul{
+  font-size: 0.9em;
+  padding-left: 20px; 
+}
+
+.experience{
+  margin-bottom: -10px;
+}
+
+.experience h4{
+  font-size: 1em;
+  margin-top: -10px;
+}
+
+.experience ul{
+  font-size: 0.9em;
+  padding-left: 20px; 
+}
+
+.sidebar {
+  background: steelblue;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.sidebar ul {
+  padding-left: 10px;
+}
+
+.sidebar li {
+  font-size: 0.7em;
+}
+
+.sidebar a{
+  font-size: 0.7em;
+}
+.sidebar h5{
+  font-size: 0.8em;
+}
+
+.sidebar img{
+  display: none;
+}
+
+#up{
+  margin-left: 0px;
+  padding: 3px;
+  margin-top: 0px;
+}
+
+#side-up {
+  margin-left: 0px;
+  padding: 3px;
+}
+/** End of Resume Page **/
+
+/** Project Page **/
+
+.posts-container{
+  display: grid;
+  grid-template-columns: 65% 30%;
+  grid-gap: 15px;
+  margin-left: 15px;
+}
+
+.posts-container h4{
   font-size: 1.2em;
 }
-/** end of profile page **/
+
+.posts-container h5{
+  font-size: 1em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.personal-projects video{
+  width: 400px;
+  margin-left: 40px;
+  -webkit-transition: 0.5s ease-in-out color;
+  -moz-transition: 0.5s ease-in-out color;
+  -o-transition: 0.5s ease-in-out color;
+}
+
+.personal-projects video:hover{
+  padding: 20px;
+}
+
+.featured-projects video{
+  width: 400px;
+  margin-left: 40px;
+  padding: 5px;
+-webkit-transition: 0.5s ease-in-out color;
+  -moz-transition: 0.5s ease-in-out color;
+  -o-transition: 0.5s ease-in-out color;
+}
+
+.featured-projects video:hover{
+  padding: 20px;
+}
+
+/** End of Project page **/
+
+/** Post Page **/
+
+.posts-container{
+  display: grid;
+  grid-template-columns: 65% 30%;
+  grid-gap: 10px;
+  margin-left: 10px;
+}
+
+.posts-container h4{
+  font-size: 1em;
+}
+
+.posts-container h5{
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/** End of post page **/
+}
+
+
+/********** extra small devices Only :-) **********/
+@media (min-width: 480px) and (max-width: 767px) {
+body{
+    font-size: 1.1em;
+  }
+
+  /* Header */
+.navbar-brand h1 {
+  color: black;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 1px whitesmoke;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 0;
+  line-height: .65;
+}
+
+#nav-list {
+  margin-top: 0px;
+}
+
+.navbar-nav li a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  line-height: 10px;
+}
+
+#nav-list a span {
+  font-size: 1.2em;
+  padding-right: 5px;
+  }
+
+#nav-list a {
+  color: black;
+  text-align: center;
+  text-shadow: 1px 1px 1px whitesmoke;
+  font-size: 12px;
+  }
+
+ .navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 5px;
+  margin-right: 15px;
+}
+
+/** First page **/
+
+#main-content h4, #features h4 {
+  margin-bottom: 7px;
+  margin-top: 15px;
+  font-size: 1em;
+}
+
+#tab-info-1 span{
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#p1 h5,#p2 h5, #p3 h5{
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+#p1, #p2{
+  display: grid;
+  width: 100%;
+  height: 140px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+#p3 {
+  display: grid;
+  width: 100%;
+  height: 140px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+#p1 p, #p2 p, #p3 p{
+  margin-top: -15px;
+}
+
+#p1:hover, #p2:hover{
+  background-color: steelblue;
+  color: floralwhite;
+  height: 160px;
+  width: 100%;
+  padding: 4px 10px;
+}
+
+#p3:hover{
+  background-color: steelblue;
+  color: floralwhite;
+  height: 160px;
+  width: 100%;
+  padding: 10px;
+}
+
+
+/** End of First Page **/
+
+/** Resume Page **/
+#my-profile-nav ul {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  left: -45px;
+  position: relative;
+  right: auto;
+}
+
+#li-1, #li-2, #li-3, #li-4 {
+  /*background-color: lightblue;
+ /*/* margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 1px;
+  font-weight: bold;
+  margin-inline: 15px;
+}
+
+#my-profile-nav li {
+  display: inline;
+  position: relative;
+}
+
+#my-profile-nav li a{
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1em;
+}
+
+.resume-container{
+  display: grid;
+  grid-template-columns: 65% 30%;
+  grid-gap: 15px;
+  margin-left: 15px;
+}
+
+.resume-container h3{
+  font-size: 1.5em;
+  margin-top: 0px;
+}
+
+.main-para h4{
+  font-size: 1em;
+}
+
+.main-para p{
+  margin-top: -5px;
+  font-size: 0.9em;
+}
+
+.schools{
+  margin-bottom: -10px;
+}
+
+.schools h4{
+  font-size: 1em;
+  margin-top: -10px;
+}
+
+.schools ul{
+  font-size: 0.9em;
+  padding-left: 20px; 
+}
+
+.experience{
+  margin-bottom: -10px;
+}
+
+.experience h4{
+  font-size: 1em;
+  margin-top: -10px;
+}
+
+.experience ul{
+  font-size: 0.9em;
+  padding-left: 20px; 
+}
+
+.sidebar {
+  background: steelblue;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.sidebar ul {
+  padding-left: 10px;
+}
+
+.sidebar li {
+  font-size: 0.7em;
+}
+
+.sidebar a{
+  font-size: 0.7em;
+}
+.sidebar h5{
+  font-size: 0.8em;
+}
+
+.sidebar img{
+  display: none;
+}
+
+#up{
+  margin-left: 0px;
+  padding: 3px;
+  margin-top: 0px;
+}
+
+#side-up {
+  margin-left: 0px;
+  padding: 3px;
+}
+/** End of Resume Page **/
+
+/** Project Page **/
+
+.posts-container{
+  display: grid;
+  grid-template-columns: 65% 30%;
+  grid-gap: 15px;
+  margin-left: 15px;
+}
+
+.posts-container h4{
+  font-size: 1.2em;
+}
+
+.posts-container h5{
+  font-size: 1em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.personal-projects video{
+  width: 300px;
+  -webkit-transition: 0.5s ease-in-out color;
+  -moz-transition: 0.5s ease-in-out color;
+  -o-transition: 0.5s ease-in-out color;
+}
+
+.personal-projects video:hover{
+  padding: 20px;
+}
+
+.featured-projects video{
+  width: 300px;
+  padding: 5px;
+-webkit-transition: 0.5s ease-in-out color;
+  -moz-transition: 0.5s ease-in-out color;
+  -o-transition: 0.5s ease-in-out color;
+}
+
+.featured-projects video:hover{
+  padding: 20px;
+}
+
+/** End of Project page **/
+
+/** Post Page **/
+
+.posts-container{
+  display: grid;
+  grid-template-columns: 65% 30%;
+  grid-gap: 10px;
+  margin-left: 10px;
+}
+
+.posts-container h4{
+  font-size: 1em;
+}
+
+.posts-container h5{
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/** End of post page **/
 }
 
 
 /********** super extra small devices Only :-) **********/
-@media (max-width: 479px) {
+@media (min-width: 350px) and (max-width: 479px) {
   body{
     font-size: 1em;
   }
@@ -804,6 +1338,17 @@ h4{
   margin-bottom: 0;
   line-height: .65;
 }
+
+#nav-list {
+  margin-top: 0px;
+}
+
+.navbar-nav li a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  line-height: 10px;
+}
+
 #nav-list a span {
   font-size: 1.2em;
   padding-right: 5px;
@@ -824,130 +1369,241 @@ h4{
   margin-right: 15px;
 }
 
-/** first page **/
-#p1, #p2{
+/** First page **/
+
+#main-content h4, #features h4 {
+  margin-bottom: 10px;
+  margin-top: 5px;
   font-size: 1em;
-  width: 100%;
-  height: 205px;
-  float: left;
-  margin-top: 7px;
-  padding: 5px;
-  padding-top: 0px;
-  text-align: justify;
 }
 
-#main-content h4 {
+#tab-info-1 span{
   font-weight: bold;
-  margin-bottom: 10px;
+  padding: 10px;
   margin-top: 10px;
 }
 
-#features h4{
-  text-align: center;
-  margin-top: 445px;
+#p1 h5,#p2 h5, #p3 h5{
+  font-size: 1em;
+  margin-top: 5px;
 }
 
-#p3{
-  color: black;
+#p1, #p2{
+  display: grid;
   width: 100%;
-  height: auto;
+  height: 160px;
   padding: 5px;
-  background-color: lightblue;
+  margin-top: 10px;
 }
 
-#p3 h4{
+#p3 {
+  display: grid;
+  width: 100%;
+  height: 160px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+#p1 p, #p2 p, #p3 p{
+  margin-top: -15px;
+}
+
+#p1:hover, #p2:hover{
+  background-color: steelblue;
+  color: floralwhite;
+  height: 180px;
+  width: 100%;
+  padding: 4px 10px;
+}
+
+#p3:hover{
+  background-color: steelblue;
+  color: floralwhite;
+  height: 180px;
+  width: 100%;
+  padding: 10px;
+}
+
+
+/** End of First Page **/
+
+/** Resume Page **/
+#my-profile-nav ul {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  left: -50px;
+  position: relative;
+  right: auto;
+}
+
+#li-1, #li-2, #li-3, #li-4 {
+  /*background-color: lightblue;
+ /*/* margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 1px;
+  font-weight: bold;
+  margin-inline: 3px;
+}
+
+#my-profile-nav li {
+  display: inline;
+  position: relative;
+}
+
+#my-profile-nav li a{
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1em;
+}
+
+.resume-container{
+  display: grid;
+  grid-template-columns: 65% 30%;
+  grid-gap: 10px;
+  margin-left: 10px;
+}
+
+.resume-container h3{
+  font-size: 1.5em;
   margin-top: 0px;
 }
 
-#p3 p{
+.main-para h4{
+  font-size: 1em;
+}
+
+.main-para p{
   margin-top: -5px;
+  font-size: 0.9em;
 }
 
-/** end of first page **/
-
-/** end of header **/
-
-/** My Profile **/
-#my-profile-nav ul {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  left: -25px;
-  position: relative;
-  right: 12px;
-}
-#li-1, #li-2, #li-3, #li-4 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 6px;
-  font-weight: bold;
-  margin-inline: 1px;
-}
-#resume-div h3{
-  font-size: 1.2em;
-  margin-top: 10px;
-  margin-bottom: 10px;
+.schools{
+  margin-bottom: -10px;
 }
 
-#about {
-  width: 100%;
-  position: relative;
-  float: left;
-  padding-inline: 0px;
+.schools h4{
+  font-size: 1em;
   margin-top: -10px;
 }
 
-#schools {
-  width: 100%;
-  position: relative;
-  float: left;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  padding-inline: 0px;
+.schools ul{
+  font-size: 0.9em;
+  padding-left: 20px; 
 }
 
-#school-img,#about-img,#work-img{
-  height: 50%;
-  width: 50%;
-  position: relative;
-  margin-left: 60px;
+.experience{
+  margin-bottom: -10px;
 }
 
-#school-list {
-  width: 100%;
-  margin-left: -25px;
+.experience h4{
+  font-size: 1em;
+  margin-top: -10px;
 }
 
-#experience{
-  width: 100%;
-  position: relative;
-  float: left;
-  clear: left;
-  padding-inline: 0px;
-  margin-top: 10px;
+.experience ul{
+  font-size: 0.9em;
+  padding-left: 20px; 
 }
 
-#handwork {
-  width: 100%;
-  position: relative;
-  float: left;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  padding-inline: 0px;
+.sidebar {
+  background: steelblue;
+  padding-left: 5px;
+  padding-right: 0px;
 }
 
-#skill-list {
+.sidebar ul {
+  padding-left: 10px;
+}
+
+.sidebar li {
+  font-size: 0.7em;
+}
+
+.sidebar a{
+  font-size: 0.7em;
+}
+.sidebar h5{
+  font-size: 0.8em;
+}
+
+.sidebar img{
+  display: none;
+}
+
+#up{
   margin-left: 0px;
-  margin-top: -40px;
-  margin-bottom: 15px;
+  padding: 3px;
+  margin-top: 0px;
 }
 
-h5{
-  font-size: 1em;
-  text-decoration: none;
+#side-up {
+  margin-left: 0px;
+  padding: 3px;
+}
+/** End of Resume Page **/
+
+/** Project Page **/
+
+.posts-container{
+  display: grid;
+  grid-template-columns: 65% 30%;
+  grid-gap: 10px;
+  margin-left: 10px;
 }
 
-h4{
+.posts-container h4{
   font-size: 1em;
 }
-/** end of profile page **/
+
+.posts-container h5{
+  font-size: 0.9em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.personal-projects video{
+  width: 220px;
+  -webkit-transition: 0.5s ease-in-out color;
+  -moz-transition: 0.5s ease-in-out color;
+  -o-transition: 0.5s ease-in-out color;
+}
+
+.personal-projects video:hover{
+  padding: 20px;
+}
+
+.featured-projects video{
+  width: 220px;
+  padding: 5px;
+-webkit-transition: 0.5s ease-in-out color;
+  -moz-transition: 0.5s ease-in-out color;
+  -o-transition: 0.5s ease-in-out color;
+}
+
+.featured-projects video:hover{
+  padding: 20px;
+}
+
+/** End of Project page **/
+
+/** Post Page **/
+
+.posts-container{
+  display: grid;
+  grid-template-columns: 65% 30%;
+  grid-gap: 10px;
+  margin-left: 10px;
+}
+
+.posts-container h4{
+  font-size: 1em;
+}
+
+.posts-container h5{
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/** End of post page **/
 }
