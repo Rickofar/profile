@@ -3,16 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rick Ofar | My Online Profile</title>
+  <meta name="author" content="Frederick Adarode">
+  <meta name="description" content="A simple Website built with HTML & CSS showing my online profile">
+  <meta name="keywords" content="HTML, CSS, Resume, Online Profile, Frederick Adarode, Rick Ofar, Projects, Blog Posts">
+  <title>Frederick Adarode | My Posts</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-  <header>
+    <header>
     <nav id="header-nav" class="navbar navbar-default">
       <div class="container">
           <div class="navbar-brand">
-            <a href="index.html"><h1>Rick Ofar</h1></a>
+            <a href="index.html"><h1>Frederick</h1></a>
           </div> 
 
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
@@ -25,9 +28,9 @@
 
         <div id="collapsable-nav" class="collapse navbar-collapse">
           <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li class="visible-xs">
+          <li class="visible-xs active">
               <a href="index.html">
-                <span class="glyphicon glyphicon-home"></span><br class="hidden-xs">Home</a>
+                <span class="glyphicon glyphicon-home"></span>Home</a>
             </li>
             <li>
               <a href="my-projects.html">
@@ -57,37 +60,91 @@
     +234-817-929-0343
     </a>
   </div>
-  <div id="xs-profile" class="text-center visible-xs">...my profile</div>
+  <div id="xs-profile" class="text-center visible-xs"></div> 
 
-<div class="container-fluid">
-      <div id="main-content">
-        <h4 id="page-content" class="text-center">Welcome to My Personalized Website</h4>
-          <div>
-            <div id="p1"><h4>Post 1</h4>
+    <div class="posts-container">
+      <div class="content">
+        
+        <div class="personal-postss">
+          <h4>My Posts</h4>
+             <!-- <h5>My Personal Posts</h5> -->
+              <h4>Post 1</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, itaque cupiditate totam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, itaque cupiditate totam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, itaque cupiditate totam.
               <div><a href="#">Learn More</a></div>
               </p>
-            </div>           
-            <div id="p2"><h4>Post 2</h4>
+                      
+              <h4>Post 2</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, itaque cupiditate totam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, itaque cupiditate totam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, itaque cupiditate totam.         
               <div><a href="#">Learn More</a></div>
               </p>
-            </div>
-            <div id="p1"><h4>Post 3</h4>
+           
+              <h4>Post 3</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, itaque cupiditate totam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, itaque cupiditate totam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, itaque cupiditate totam.
               <div><a href="#">Learn More</a></div>
               </p>
-            </div>           
-            <div id="p2"><h4>Post 4</h4>
+                      
+              <h4>Post 4</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, itaque cupiditate totam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, itaque cupiditate totam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, itaque cupiditate totam.         
               <div><a href="#">Learn More</a></div>
               </p>
-            </div>
+           
+          </div><!-- End of personal posts --> 
+          <hr>
+
+        <div class="featured-posts">
+          <h4>Featured Posts</h4>
+            <h4>Featured Post 1</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, itaque cupiditate totam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, itaque cupiditate totam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, itaque cupiditate totam.
+              <div><a href="#">Learn More</a></div>
+              </p>
+          <hr>
+        </div><!-- End of featured posts --> 
+               <a href="#top"><span class="glyphicon glyphicon-chevron-up" id="up"></span></a>                     
+      </div><!-- End of content -->
+
+      <div class="sidebar">
+        <div>
+            <h5>Contact</h5>
+        </div>
+                  <div>
+                    <a href="mailto:frederickadarode@zoho.com?" target="_blank" title="Email on frederickadarode@zoho.com">
+                       <img src="img/email.png" width="15">
+                        <span>frederickadarode@zoho.com</span>
+                    </a>
+                  </div>
+        
+                  <div>
+                    <a href="tel:+234-817-929-0343">
+                      <img src="img/phone.png" width="15">
+                        <span>+234-817-929-0343</span>
+                    </a>
+                  </div>
+                    
+          <div>              
+            <h5>External Links</h5>
+                    <a href="https://www.linkedin.com/in/frederickadarode" target="_blank" title="Connect on LinkedIn">
+                      <span> Connect with me on LinkedIn</span>
+                    </a>
+
+                    <a href="https://github.com/Rickofar" target="_blank" title="GitHub">
+                      <div> I am on GitHub</div>
+                    </a>
           </div>
-      </div><!-- End of Menu Info -->     
-    </div><!-- container-fluid -->
+                   <br>
+          <div class="skill-list" id="skills">
+            <h5>Skills</h5>
+                    <ul>
+                      <li>Microsoft Office</li>
+                      <li>Adobe Creative Suite (Especially After Effect, Premier Pro, Illustrator, XD and Encoder)</li>
+                      <li>WordPress</li>
+                      <li>HTML, CSS &amp; Javascript</li>
+                    </ul>        
+                <a href="#top"><span class="glyphicon glyphicon-chevron-up" id="side-up"></span></a>
+          </div>
+      </div><!-- End of sidebar -->
+    </div><!-- End of resume-container -->
 
-  <footer class="panel-footer">
+    <footer class="panel-footer">
     <div class="container">
       <div class="row">
         <section id="hours" class="col-sm-4">
@@ -105,16 +162,16 @@
           <img src="img/whatsapp.png">
           </a>
           <a href="https://www.Facebook.com/rickofar" target="_blank" title="Like my Facebook Page">
-         <img src="img/facebook.png">
+         <img src="img/facebook.png" >
           </a>
           <a href="https://instagram.com/rickofar" target="_blank" title="Tag me on Instagram">
           <img src="img/instagram.png">
           </a>
           <a href="https://snapchat.com/add/rickofar" target="_blank" title="Tag me on snapchat">
-          <img src="img/snapchat.png">
+          <img src="img/snapchat.png" >
           </a>
           <a href="https://www.twitter.com/rickofar1" target="_blank" title="Follow me on Twitter">
-          <img src="img/twitter.png">
+          <img src="img/twitter.png" >
           </a>
         </p>          
         </section>
