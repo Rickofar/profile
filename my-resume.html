@@ -3,16 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rick Ofar | My Resume</title>
+  <meta name="author" content="Frederick Adarode">
+  <meta name="description" content="A simple Website built with HTML & CSS showing my online profile">
+  <meta name="keywords" content="HTML, CSS, Resume, Online Profile, Frederick Adarode, Rick Ofar, Projects, Blog Posts">
+  <title>Frederick Adarode | Resume</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-  <header>
+    <header>
     <nav id="header-nav" class="navbar navbar-default">
       <div class="container">
           <div class="navbar-brand">
-            <a href="index.html"><h1>Rick Ofar</h1></a>
+            <a href="index.html" id="top"><h1>Frederick</h1></a>
           </div> 
 
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
@@ -26,8 +29,8 @@
         <div id="collapsable-nav" class="collapse navbar-collapse">
           <ul id="nav-list" class="nav navbar-nav navbar-right">
             <li class="visible-xs">
-              <a href="index.html">
-                <span class="glyphicon glyphicon-home"></span><br class="hidden-xs">Home</a>
+                <a href="index.html">
+                  <span class="glyphicon glyphicon-home"></span>Home</a>
             </li>
             <li>
               <a href="my-projects.html">
@@ -57,253 +60,224 @@
     +234-817-929-0343
     </a>
   </div>
+  <div id="xs-profile" class="text-center visible-xs"></div> 
 
-  <div class="container" id="my-profile-nav">
+    <div class="container" id="my-profile-nav">
     <ul>
       <!-- Link to every section in the page -->
-		<li id="li-1"><a href="#aboutme">About Me</a></li>
-		<li id="li-2"><a href="#education">Education</a></li>
-		<li id="li-3"><a href="#work">Work</a></li>
-		<li id="li-4"><a href="#skills">Skills</a></li>
+    <li id="li-1"><a href="#summary">Professional Summary</a></li>
+    <li id="li-2"><a href="#education">Education</a></li>
+    <li id="li-3"><a href="#work">Work</a></li>
+    <li id="li-4"><a href="#skills">Skills</a></li>
     </ul>
    </div><!-- my profile nav -->
 
-<div class="container">
-<section id="aboutme">
-  <div id="resume-div"><h3 id="top" class="text-center">My Resume</h3></div>
-      <div id="about">
-          <h4>About Me</h4>
-            <p>My name is Frederick Adarode. I am from Ughelli, Delta State, Nigeria. I had my West African Senior Secondary School Certificate in the year 2009. 
-            <br>
-            <br>
-            However, prior to 2009, I worked as a sales attendant at an electronic shop. Through this work experience, I learnt basic customer service especially in handling customer complaints being one of the major objectives for any successful business.
-            <br>
-            <br>
-            I also worked as an office clerk at Donrose-RK Nigeria Limited (June, 2008 - December, 2009). It was an entry level position where I handled reports consisting of sales, expenses, monthly business performances. One of my responsibilities is ensuring that reports are filed accordingly both in hard copies and retrievable soft copies. This position also exposed me to the different channels of communication within and outside an organization.
-            <br>
-            <br>
-            During my time at Donrose-RK, I designed and introduced several spreadsheet templates where information are computed and same can be retrieved. It took me less than five months of working to compile information ranging from Cash on Delivery (CODs) to Waybill, Incentive, Credit Notes, etc into the system for a period of ten years (1998 to 2008). The information gathered assisted the management in uncovering undelivered orders from Nigerian Breweries Plc.  
-            <br>
-            <br>
-            After which I proceeded to study Mass Communication at the Delta State Polytechnic, Ogwashi-Uku where I obtained a National Diploma with a 2.75 CGPA. At completion of the program, I did a one year compulsory industrial training attaché program at a telecommunication network provider’s KYC office. This further exposed me to customer service duties. During the same period, I was also an Intern at a metering station of the Nigerian Gas Company. I did these two programs concurrently. 
-            <br>
-            <br>
-            Between 2012 and 2014, I attended the Federal Polytechnic, Nekede to study Mass Communication where I obtained a Higher National Diploma with a 2.96 CGPA and later proceeded for the one year Nigeria’s National Youth Service in 2015. 
-            <br>
-            <br>            
-            In 2017, my wife and I started family business where I am currently the retail sales manager. This position has exposed me to deal with balance sheet and profit and loss accounts. Since I started working in the business, it has become clearer how business world is operating, changing and adapting to create more paths to success is a feature that I can apply. Google My Business is an effective tool we employed in creating a strong presence in our community as business owners. 
-            <br>
-            <br>
-            I am currently learning HTML, CSS and Javascript for Web Development and I hope to make the most of it.</p>    
+    <div class="resume-container">
+      <div class="content">
+        
+        <div class="main-para" >
+          <h3>Frederick Adarode</h3>
+             <h4>Professional Summary</h4>
+               <p id="summary">Customer-focused, visionary-thinking Retail Manager with over <b>4 years</b> of experience in cultivating relationships, creating marketing campaigns and growing profit channels. Experienced with <b>InventoryPlus, Microsoft Word and Excel.</b> Self-motivated leader with skill in growing business relations, sales and generating practical solutions based on client's demand.</p>
+            <hr>
+          </div>
+            <div class="schools" id="education">               
+                <h4>Education</h4>
+                      <ul>
+                          <li><b>HTML, CSS & JAVASCRIPT FOR WEB DEVELOPMENT</b></li>
+                            <ul>
+                              <li>Coursera Online Program</li>
+                            </ul><br>
+                          <li><b>HND, Mass Communication (2014)</b></li>
+                            <ul>
+                              <li>Federal Polytechnic, Nekede, Owerri, Imo State</li>
+                            </ul><br>
+                          <li><b>OND, Mass Communication (2011)</b></li>
+                          <ul>
+                            <li>Delta State Polytechnic, Ogwashi-Uku</li>
+                          </ul><br>
+                          <li><b>West African Senior Secondary School, Certificate (2009)</b></li>
+                          <ul>
+                            <li>High Standard Comprehensive School, Ughelli, Delta State</li>
+                          </ul><br>
+                         <!--  <li>Government College, Ughelli, Delta State (2006)</li><br>
+                          <li>CIVITAS, Nigeria (2002)</li><br>
+                          <li><b>First School Leaving Certificate (2000)</b></li>
+                          <ul>
+                            <li>Oharisi Model Primary School, Ughelli, Delta State</li>
+                          </ul> -->
+                      </ul>
+                <hr>
+            </div> 
+
+          <div class="experience" id="work">
+            <h4>Work</h4>
+              <ul>
+                <li><b>RETAIL SALES MANAGER</b> - November, 2017 – Till Date
+                  <div>Radiant Amore Services</div>
+                  <div>3 Ejavota Street,  Off Olori Road, Ughelli, Delta  State</div>
+              </li>
+              <!-- <p><i>Duties and Responsibilities</i></p>          
+                  <ul>
+                  <li>Greet and direct customers</li>
+                  <li>Provide accurate information (e.g. product features, pricing and after-sales services)</li>
+                  <li>Answer customers’ questions about specific products/services</li>
+                  <li>Conduct price and feature comparisons to facilitate purchasing</li>
+                  <li>Ensure racks are fully stocked</li>
+                  <li>Manage returns of merchandise</li>
+                  <li>Coordinate with the Retail Sales Representatives team to provide excellent customer service (especially during peak times)</li>
+                  <li>Inform customers about discounts and special offers</li>
+                  <li>Provide customer feedback to the Store Manager</li>
+                  <li>Stay up-to-date with new products/services</li>
+                  </ul> -->
+                  <br>
+         
+                <li><b>ENGLISH LANGUAGE TEACHER</b> - October, 2015 - October, 2016
+                  <div>NYSC Primary Place of Assignment</div>
+                  <div>Green Pasture Schools, Imashayi,</div>
+                  <div>Yewa North, Ogun State.</div>
+                </li>
+                <br> 
+
+                <li><b>KYC OFFICER</b> - December, 2011 - December, 2012 <i>(One Year Internship)</i>
+                  <div>Gukon Nigeria Enterprise</div>
+                  <div>110 Market Road, Ughelli, Delta State</div>
+                </li>
+<!--                 <div><p><i>Duties and Responsibilities</i></p></div>          
+                  <ul>
+                    <li>Customer Service</li>
+                  <li>Retrieval of Lost, Damaged or Stolen SIM Cards</li>
+                  <li>Registration and Activation of New SIM Cards</li>
+                  </ul> -->
+                  <br>
+
+                <li><b>ADMINISTRATIVE ASSISTANT</b> - October, 2010 - January, 2011 <i>(Four Months Internship)</i>
+                  <div>Donrose-RK Nigeria Limited</div>
+                  <div>217 Ughelli - Patani Road, Ughelli, Delta State</div>
+                </li>
+<!--                 </li>
+                <div><p><i>Duties and Responsibilities</i></p></div>          
+                  <ul>
+                    <li>Compiling of daily, weekly and monthly reports</li>
+                    <li>Supervision of NB PLC In-Bar Promotions</li>
+                    <li>Secretariat duties to the General Manager, Administrator and CEO</li>
+                  <li>Computerized records keeping</li>
+                  </ul> -->
+                  <br>      
+
+                <li><b>ADMINISTRATIVE ASSISTANT</b> - June, 2008 - December, 2009
+                  <div>Donrose-RK Nigeria Limited</div>
+                  <div>217 Ughelli - Patani Road, Ughelli, Delta State</div>
+                </li>
+<!--                 <div><p><i>Duties and Responsibilities</i></p></div>          
+                  <ul>
+                    <li>Compiling of daily, weekly and monthly reports</li>
+                    <li>Secretariat duties to the General Manager, Administrator and CEO</li>
+                  <li>Computerized records keeping</li>
+                  </ul> -->
+                  <br>
+
+              <li><b>SALESPERSON</b> - June, 2006 - July, 2007
+                <div>Shola Holdings</div>
+                <div>109 Isoko Road, Ughelli, Delta State</div>
+                <!-- <div><p><i>Duties and Responsibilities</i></p></div>           -->
+                  <!-- <ul>
+                  <li>Customer Service</li> 
+                  <li>Shop Attendant</li>
+                </ul> -->
+              </li>
+            </ul>    
+            <hr>
+          </div><!-- end of work -->  
+                <a href="#top"><span class="glyphicon glyphicon-chevron-up" id="up"></span></a>              
+        </div><!-- end of content -->
+
+      <div class="sidebar">
+        <div>
+            <h5>Contact</h5>
         </div>
-       <img src="Frederick Adarode.jpg" width="240" height="325" id="about-img"class="hidden-xs hidden-sm"> 
-        <div class="clearfix visible-lg-block visible-md-block"></div>
-</section><!-- about section -->
+                  <div>
+                    <a href="mailto:frederickadarode@zoho.com?" target="_blank" title="Email on frederickadarode@zoho.com">
+                       <img src="img/email.png" width="15">
+                        <span>frederickadarode@zoho.com</span>
+                    </a>
+                  </div>
+        
+                  <div>
+                    <a href="tel:+234-817-929-0343">
+                      <img src="img/phone.png" width="15">
+                        <span>+234-817-929-0343</span>
+                    </a>
+                  </div>
+                    
+          <div>              
+            <h5>External Links</h5>
+                    <a href="https://www.linkedin.com/in/frederickadarode" target="_blank" title="Connect on LinkedIn">
+                      <span> Connect with me on LinkedIn</span>
+                    </a>
 
-<section id="education">
-  <div id="schools">
-       <img src="img/school.png" width="400" height="315" id="school-img" class="hidden-xs hidden-sm">
-  </div>
-      <br>
-      <br>
-      <h4>Education</h4>
-      <div id="school-list">
-        <ol>
-          <li><b>HTML, CSS & JAVASCRIPT FOR WEB DEVELOPMENT (FULL STACK)</b></li>
-            <ul>
-              <li>Coursera Online Program</li>
-            </ul><br>
-          <li><b>HND, Mass Communication (2014)</b></li>
-            <ul>
-              <li>Federal Polytechnic, Nekede, Owerri, Imo State</li>
-            </ul><br>
-          <li><b>OND, Mass Communication (2011)</b></li>
-          <ul>
-            <li>Delta State Polytechnic, Ogwashi-Uku</li>
-          </ul><br>
-          <li><b>West African Senior Secondary School, Certificate (2009)</b></li>
-          <ul>
-            <li>High Standard Comprehensive School, Ughelli, Delta State</li>
-          </ul><br>
-          <li>Government College, Ughelli, Delta State (2006)</li><br>
-          <li>CIVITAS, Nigeria (2002)</li><br>
-          <li><b>First School Leaving Certificate (2000)</b></li>
-          <ul>
-            <li>Oharisi Model Primary School, Ughelli, Delta State</li>
-          </ul>
-      </ol>
-  </div>
-            <section id="top">  
-              <h5><a href="#top">Go to the Top</a></h5>
-            </section>     
-</section>
-
-<section id="work">
-  <div id="experience">
-      <h4>Work</h4>
-      <ol>
-        <li><b>RADIANT AMORE SERVICES</b>
-          <div>(3 Ejavota Street,  Off Olori Road, Ughelli, Delta  State)</div>
-          <div>Retail Sales Manager (November, 2017 – Till Date)</div>
-        </li>
-          <p><i>Duties and Responsibilities</i></p>          
-          <ul>
-          <li>Greet and direct customers</li>
-          <li>Provide accurate information (e.g. product features, pricing and after-sales services)</li>
-          <li>Answer customers’ questions about specific products/services</li>
-          <li>Conduct price and feature comparisons to facilitate purchasing</li>
-          <li>Ensure racks are fully stocked</li>
-          <li>Manage returns of merchandise</li>
-          <li>Coordinate with the Retail Sales Representatives team to provide excellent customer service (especially during peak times)</li>
-          <li>Inform customers about discounts and special offers</li>
-          <li>Provide customer feedback to the Store Manager</li>
-          <li>Stay up-to-date with new products/services</li>
-          </ul>
-          <br>
- 
-        <li><b>NYSC PRIMARY PLACE OF ASSIGNMENT</b>
-          <div>Green Pasture Schools, Imashayi, Yewa North, Ogun State.</div>
-          <div>Classroom Teacher (October, 2015 - October, 2016)</div>
-        </li>
-        <br> 
-
-        <li><b>GUKON NIGERIA ENTERPRISES</b>
-          <div> (110 Market Road, Ughelli, Delta State)</div>
-          <div>KYC SIM Registration Agent (December, 2011 - December, 2012)</div>
-          <div>One Year Internship</div>
-        </li>
-        <div><p><i>Duties and Responsibilities</i></p></div>          
-          <ul>
-            <li>Customer Service</li>
-          <li>Retrieval of Lost, Damaged or Stolen SIM Cards</li>
-          <li>Registration and Activation of New SIM Cards</li>
-          </ul>
-          <br>
-
-        <li><b>DONROSE- RK NIGERIA LIMITED</b>
-          <div>(217 Ughelli -Patani Road, Ughelli, Delta State)</div>
-          <div>Administrative Assistant (October, 2010 - January, 2011)</div>
-        </li>
-        <div><p><i>Duties and Responsibilities</i></p></div>          
-          <ul>
-            <li>Compiling of daily, weekly and monthly reports</li>
-            <li>Supervision of NB PLC In-Bar Promotions</li>
-            <li>Secretariat duties to the General Manager, Administrator and CEO</li>
-          <li>Computerized records keeping</li>
-          </ul>
-          <br>      
-
-        <li><b>DONROSE-RK NIGERIA LIMITED</b>
-          <div>(217 Ughelli - Patani Road, Ughelli, Delta State)</div>
-          <div>Administrative Assistant (June, 2008 - December, 2009)</div>
-        </li>
-        <div><p><i>Duties and Responsibilities</i></p></div>          
-          <ul>
-            <li>Compiling of daily, weekly and monthly reports</li>
-            <li>Secretariat duties to the General Manager, Administrator and CEO</li>
-          <li>Computerized records keeping</li>
-          </ul>
-          <br>
-
-      <li><b>SHOLA HOLDINGS</b></li>
-        <div>(109 Isoko Road, Ughelli, Delta State)</div>
-        <div>Sales Man (June, 2006 - July, 2007)</div>
-        <div><p><i>Duties and Responsibilities</i></p></div>          
-          <ul>
-          <li>Customer Service</li> 
-          <li>Shop Attendant</li>
-        </ul>
-      </ol>
-  </div>
-       <img src="img/work.png" width="400" height="315" id="work-img" class="hidden-xs hidden-sm">
-    <div class="clearfix visible-lg-block visible-md-block"></div>
-    <section id="top">  
-      <h5><a href="#top">Go to the Top</a></h5>
-    </section>  
-</section>
-
-
-<section id="skills">
-  <div id="handwork" class="hidden-xs hidden-sm">
-       <img src="img/skills.png" width="250" height="315" id="handwork-img">
-  </div>
-      <br>
-      <br>
-      <div id="skill-list">
-      <h4>Skills</h4>
-        <ol>
-          <li>Microsoft Office</li>
-          <li>Adobe Creative Suite (Especially After Effect, Premier Pro, Illustrator, XD and Encoder)</li>
-        <li>WordPress</li>
-        <li>HTML, CSS &amp; Javascript</li>
-      </ol>  
-          <div class="clearfix visible-lg-block visible-md-block"></div>   
-</section>
-
-<section id="externallinks">
-    <h4>External Links</h4>
-      <p>
-       <a href="https://www.linkedin.com/in/frederickadarode" target="_blank" title="Connect on LinkedIn">
-          <div> Connect with me on LinkedIn</div>
-          </a>
-      </p>
-      <p>
-       <a href="https://github.com/Rickofar" target="_blank" title="GitHub">
-          <div> I am on GitHub</div>
-          </a>
-      </p>
-</section>
-
-    <section id="top">
-      <h5><a href="#top">Go to t he Top</a></h5>
-    </section>
-</div><!-- container-fluid -->     
-
+                    <a href="https://github.com/Rickofar" target="_blank" title="GitHub">
+                      <div> I am on GitHub</div>
+                    </a>
+          </div>
+                   <br>
+          <div class="skill-list" id="skills">
+            <h5>Skills</h5>
+                    <ul>
+                      <li>Microsoft Office</li>
+                      <li>Adobe Creative Suite (Especially After Effect, Premier Pro, Illustrator, XD and Encoder)</li>
+                      <li>WordPress</li>
+                      <li>HTML, CSS &amp; Javascript</li>
+                    </ul>        
+                <a href="#top"><span class="glyphicon glyphicon-chevron-up" id="side-up"></span></a>
+          </div>
+      </div><!-- End of sidebar -->
+    </div><!-- End of resume-container -->
 
 
   <footer class="panel-footer">
     <div class="container">
-      <div class="row">
-        <section id="hours" class="col-sm-4">
-          <span>Hours:</span><br>
-	          Available 24/7<br>
-          <hr class="visible-xs"><br>
-          <br>
-        <p> Connect with me on my social media platforms for updates.<br>
+        <div class="row">
+          <section id="hours" class="col-sm-4">
+            <span>Hours:</span><br>
+              Available 24/7<br>
+            <hr class="visible-xs"><br>
+            <br>
+          <p> Connect with me on my social media platforms for updates.<br>
 
-        <!-- Link to Social Media Pages with Target -->
-        <a href="mailto:frederickadarode@zoho.com?" target="_blank" title="Email on frederickadarode@zoho.com">
-          <img src="img/email.png">
-          </a>
-        <a href="https://wa.me/+2348179290343" target="_blank" title="Chat with me on WhatsApp!">
-          <img src="img/whatsapp.png">
-          </a>
-          <a href="https://www.Facebook.com/rickofar" target="_blank" title="Like my Facebook Page">
-         <img src="img/facebook.png">
-          </a>
-          <a href="https://instagram.com/rickofar" target="_blank" title="Tag me on Instagram">
-          <img src="img/instagram.png">
-          </a>
-          <a href="https://snapchat.com/add/rickofar" target="_blank" title="Tag me on snapchat">
-          <img src="img/snapchat.png">
-          </a>
-          <a href="https://www.twitter.com/rickofar1" target="_blank" title="Follow me on Twitter">
-          <img src="img/twitter.png">
-          </a>
-        </p>          
-        </section>
-        
-        <section id="address" class="col-sm-4">
-          <span>Address:</span><br>
-          3 Ejavota Street off Olori Road,<br>
-          Ughelli 333105, Delta State
-          <p> </p>
-          <hr class="visible-xs">
-        </section>
-        <section id="testimonials" class="col-sm-4">
+          <!-- Link to Social Media Pages with Target -->
+          <a href="mailto:frederickadarode@zoho.com?" target="_blank" title="Email on frederickadarode@zoho.com">
+            <img src="img/email.png">
+            </a>
+          <a href="https://wa.me/+2348179290343" target="_blank" title="Chat with me on WhatsApp!">
+            <img src="img/whatsapp.png">
+            </a>
+            <a href="https://www.Facebook.com/rickofar" target="_blank" title="Like my Facebook Page">
+           <img src="img/facebook.png" >
+            </a>
+            <a href="https://instagram.com/rickofar" target="_blank" title="Tag me on Instagram">
+            <img src="img/instagram.png">
+            </a>
+            <a href="https://snapchat.com/add/rickofar" target="_blank" title="Tag me on snapchat">
+            <img src="img/snapchat.png" >
+            </a>
+            <a href="https://www.twitter.com/rickofar1" target="_blank" title="Follow me on Twitter">
+            <img src="img/twitter.png" >
+            </a>
+          </p>          
+          </section>
+          
+          <section id="address" class="col-sm-4">
+            <span>Address:</span><br>
+            3 Ejavota Street off Olori Road,<br>
+            Ughelli 333105, Delta State
+            <p> </p>
+            <hr class="visible-xs">
+          </section>
+          <section id="testimonials" class="col-sm-4">
 
-        </section>
-    </div>
+          </section>
+        </div>
       <div class="text-center"> &copy; Copyright Rick Ofar 2022</div>
     </div>
   </footer>
